@@ -8,7 +8,7 @@ export default function Github() {
     <>
       <div className="github-main-container">
         <div className="github-container">
-          <h2>Explore</h2>
+          <h2 className='git_subheadings'>Explore</h2>
           <>
             <h1 align="center" >
               <img className='headline-style' src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=👋+Hello,+Future+Collaborator!;🇮🇳+i'am+Buddhadeb+Koner;" />
@@ -17,7 +17,7 @@ export default function Github() {
               className='dece-paragraph'
               align="center" dangerouslySetInnerHTML={{ __html: Resume.githubdata.desc }}></p>
             <br />
-            <h2 className='margin-top'>Known  Technologysnpm</h2>
+            <h2 className='git_subheadings'>Known  Technologysnpm</h2>
             <div align="center" className='langiage-icons'>
               {githubdata.language.split(',').map((skill, index) => (
                 <img
@@ -28,7 +28,7 @@ export default function Github() {
               ))}
             </div>
 
-            <h2 className='margin-top'>Commits</h2>
+            <h2 className='git_subheadings'>Commits</h2>
             <div className='commits-github' >
               <img
                 src="https://github-readme-streak-stats.herokuapp.com/?user=BuddhadebKoner&theme=dark&hide_border=false"

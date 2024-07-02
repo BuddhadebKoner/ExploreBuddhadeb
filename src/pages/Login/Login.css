@@ -48,3 +48,55 @@
 .github-login:hover {
     background-color: #222;
 }
+
+
+
+/* Responsive Styling */
+
+/* Desktop */
+@media (min-width: 1025px) {
+    .login-card {
+        width: 500px;
+        padding: 50px;
+    }
+
+    .google-login,
+    .github-login {
+        width: 100%;
+        padding: 12px 20px;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .login-card {
+        width: 80%;
+        padding: 40px;
+    }
+
+    .google-login,
+    .github-login {
+        width: 100%;
+        padding: 12px 20px;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+    .login-card {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .google-login,
+    .github-login {
+        width: 100%;
+        padding: 10px 15px;
+        margin-top: 15px;
+        font-size: 14px;
+    }
+}

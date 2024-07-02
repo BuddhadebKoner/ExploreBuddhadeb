@@ -82,7 +82,7 @@
 /* Mobile */
 @media (max-width: 500px) {
   .current-project-box {
-      padding: 0 1rem;
+      padding: 0 2px;
   }
 
   .current-project-container {

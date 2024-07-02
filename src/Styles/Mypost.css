@@ -58,7 +58,7 @@
 /* Mobile */
 @media (max-width: 500px) {
     .post-sec-full-box-container {
-        padding: 0 1rem;
+        padding: 0;
     }
 
     .feed-container-box {

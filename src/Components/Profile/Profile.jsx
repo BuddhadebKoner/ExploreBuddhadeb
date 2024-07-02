@@ -74,14 +74,6 @@ export default function Profile() {
                   >
                      <img src={assets.threeDot} alt="" className='mail-icon' />
                   </NavLink>
-
-                  <div className="show-threedot-container">
-                     {showText && (
-                        <div className="threedots-popup">
-                           <p>Create Your own<br />Website !</p>
-                        </div>
-                     )}
-                  </div>
                </div>
             </div>
          </div>

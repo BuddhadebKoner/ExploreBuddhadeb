@@ -1,24 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import assets from '../../assets/icons/icons'
 import { Link, NavLink, useLocation } from 'react-router-dom'
-// styles are here
 import '../../Styles/Navbar.css'
 import { Helmet } from 'react-helmet'
 
 export default function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
 
-  // Mapping routes to titles
   const routeTitles = {
     "/": "Buddhadebs Home",
     "/github": "Buddhadebs GitHub",
     "/newsfeed": "Buddhadebs NewsFeed",
     "/login": "Buddhadebs Login",
-    "/getstarted": "Buddhadebs EXplore"
+    "/getstarted": "Buddhadebs Explore"
   };
 
-  // Get the current title based on the current path
   const currentTitle = routeTitles[location.pathname] || "Buddhadebs Home";
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <>
@@ -38,7 +40,6 @@ export default function Navbar() {
           >
             GitHub
           </NavLink>
-
           <NavLink
             to="/newsfeed"
             className={({ isActive }) =>
@@ -47,7 +48,6 @@ export default function Navbar() {
           >
             News
           </NavLink>
-
           <NavLink
             to="/login"
             className={({ isActive }) =>
@@ -56,7 +56,6 @@ export default function Navbar() {
           >
             Login
           </NavLink>
-
           <NavLink
             to="/getstarted"
             className='super'
@@ -64,7 +63,20 @@ export default function Navbar() {
             Get Started
           </NavLink>
         </div>
-      </div >
+        <div className="hamburger-container" onClick={toggleMenu}>
+          {!isMenuOpen ? (
+            <img src={assets.hamburger} alt="Open Menu" />
+          ) : (
+            <img src={assets.close} alt="Close Menu" />
+          )}
+        </div>
+        <div className={`hamburger-menu ${isMenuOpen ? 'open' : ''}`}>
+          <NavLink to="/github" onClick={toggleMenu}>GitHub</NavLink>
+          <NavLink to="/newsfeed" onClick={toggleMenu}>News</NavLink>
+          <NavLink to="/login" onClick={toggleMenu}>Login</NavLink>
+          <NavLink to="/getstarted" onClick={toggleMenu}>Get Started</NavLink>
+        </div>
+      </div>
     </>
   )
 }

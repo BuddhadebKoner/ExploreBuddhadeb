@@ -1,3 +1,74 @@
+/* Hamburger container styles */
+.hamburger-container {
+    display: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.hamburger-container img {
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+/* Hamburger menu styles */
+.hamburger-menu {
+    width: 100%;
+    height: fit-content;
+    position: fixed;
+    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4rem 0;
+    gap: 10px;
+    top: -100%;
+    /* Start off-screen */
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: top 0.3s ease-in-out;
+    /* Smooth transition */
+    z-index: 999;
+}
+
+.hamburger-menu.open {
+    top: 0;
+    /* Slide down */
+    display: flex;
+}
+
+.hamburger-menu a {
+    padding: 15px;
+    width: fit-content;
+    text-align: center;
+    font-weight: bold;
+    width: 200px;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border: 1px solid #444;
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+    .hamburger-container {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+}
+
+
+
+
 .navbar-container {
     width: 100vw;
     box-sizing: border-box;
@@ -24,14 +95,15 @@
     /* display: none; */
 }
 
-.nav-links > a {
+.nav-links>a {
     margin: 10px 10px;
+    font-weight: bold;
 }
 
 .super {
     width: 199px;
     height: fit-content;
-    background-color: #ff5f5f ;
+    background-color: #ff5f5f;
     color: white;
     padding: 10px 50px 10px 50px;
     border-radius: 2em;
@@ -48,9 +120,10 @@
 }
 
 .content {
-    margin-top: 65px; 
+    margin-top: 65px;
 }
-.navbar-toggle img{
+
+.navbar-toggle img {
     display: none;
     width: 30px;
 }
@@ -62,7 +135,7 @@
 /* Desktop */
 @media (max-width: 1024px) {
     .navbar-container {
-        padding: 0 10rem;
+        padding: 0 4rem;
     }
 
     .super {
@@ -76,7 +149,7 @@
         padding: 0 5rem;
     }
 
-    .nav-links > a {
+    .nav-links>a {
         margin: 8px 8px;
     }
 

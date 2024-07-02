@@ -6,7 +6,12 @@
     align-items: start;
     justify-content: center;
 }
-
+.git_subheadings{
+    font-size: 1.1rem;
+    margin: 1rem;
+    font-weight: bold;
+    color: #ff5f5f;
+}
 .github-container{
     width: 80vw;
     height: fit-content;
@@ -56,3 +61,83 @@
     font-size: 1em;
 }
 
+
+
+/* make it responsive */
+
+@media (max-width: 1024px) {
+    .github-container {
+      width: 90vw;
+      padding: 30px 0;
+    }
+  
+    .github-container img {
+      width: 60vw;
+    }
+  
+    .commits-github > img {
+      width: 25em;
+    }
+  
+    .langiage-icons > img {
+      width: 40px;
+      margin: 0 8px;
+    }
+  
+    .dece-paragraph {
+      font-size: 0.9em;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .github-container {
+      width: 95vw;
+      padding: 20px 0;
+    }
+  
+    .github-container img {
+      width: 70vw;
+    }
+  
+    .commits-github > img {
+      width: 20em;
+    }
+  
+    .langiage-icons {
+      justify-content: center;
+    }
+  
+    .langiage-icons > img {
+      width: 35px;
+      margin: 0 6px;
+    }
+  
+    .dece-paragraph {
+      font-size: 0.85em;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .github-container {
+      width: 95vw;
+      padding: 10px 0;
+    }
+  
+    .github-container img {
+      width: 80vw;
+    }
+  
+    .commits-github > img {
+      width: 15em;
+    }
+  
+    .langiage-icons > img {
+      width: 30px;
+      margin: 0 4px;
+    }
+  
+    .dece-paragraph {
+      font-size: 0.8em;
+    }
+  }
+  

@@ -12,6 +12,8 @@ import Like from './like.png'
 import Close from './Close.png'
 import more from './more.png'
 import GpayQR from './GPayQR.svg'
+import hamburger from './menu_hamburgur.svg'
+import close from './close.svg'
 
 const heroBanner = 'https://i.ibb.co/9VHf0k3/hero-banner.webp'
 const profile = 'https://i.ibb.co/56hzHJn/profile.jpg'
@@ -20,6 +22,8 @@ const assets = {
     Donate,
     fb,
     heroBanner,
+    hamburger,
+    close,
     home,
     link,
     linkedin,
