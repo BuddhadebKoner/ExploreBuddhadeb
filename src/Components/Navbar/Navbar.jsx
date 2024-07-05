@@ -49,7 +49,7 @@ export default function Navbar() {
             News
           </NavLink>
           <NavLink
-            to="/login"
+            to={'/login'}
             className={({ isActive }) =>
               isActive ? "nav-links-active" : "nav-links-normal"
             }
@@ -57,10 +57,10 @@ export default function Navbar() {
             Login
           </NavLink>
           <NavLink
-            to="/getstarted"
+            to={'/aboutwebinfo'}
             className='super'
           >
-            Get Started
+            TESTIMONIALS
           </NavLink>
         </div>
         <div className="hamburger-container" onClick={toggleMenu}>
