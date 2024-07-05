@@ -72,9 +72,10 @@ export default function Navbar() {
         </div>
         <div className={`hamburger-menu ${isMenuOpen ? 'open' : ''}`}>
           <NavLink to="/github" onClick={toggleMenu}>GitHub</NavLink>
-          <NavLink to="/newsfeed" onClick={toggleMenu}>News</NavLink>
-          <NavLink to="/login" onClick={toggleMenu}>Login</NavLink>
-          <NavLink to="/getstarted" onClick={toggleMenu}>Get Started</NavLink>
+          <NavLink to="/newsfeed" onClick={toggleMenu}>Resume</NavLink>
+          <NavLink to="/explore" onClick={toggleMenu}>Post</NavLink>
+          <NavLink to='/aboutwebinfo' onClick={toggleMenu}>Feedbacks</NavLink>
+          <NavLink to='/newsfeed' onClick={toggleMenu}>News</NavLink>
         </div>
       </div>
     </>
