@@ -1,0 +1,248 @@
+.workingon-container {
+    width: 65rem;
+    max-width: 100%;
+    height: fit-content;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15), 0px 2px 5px rgba(0, 0, 0, 0.05), 0px 8px 40px rgba(0, 0, 0, 0.04);
+    border-radius: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem;
+    gap: 10px;
+}
+
+.profile-heading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15), 0px 2px 5px rgba(0, 0, 0, 0.05), 0px 8px 40px rgba(0, 0, 0, 0.04);
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.profile-heading a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+
+.profile-heading a:hover {
+    text-decoration: underline;
+}
+
+.profile-heading a h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000;
+    margin-left: 1rem;
+}
+
+.profile-heading a img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+
+.profile-heading p {
+    margin-left: auto;
+}
+
+.workingon-details {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15), 0px 2px 5px rgba(0, 0, 0, 0.05), 0px 8px 40px rgba(0, 0, 0, 0.04);
+    border-radius: 10px;
+    padding: 1.2rem;
+}
+
+.workingon-details-thumbnail {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.workingon-details-thumbnail img {
+    width: 100%;
+    height: auto; 
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+.workingon-details-description {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 10px 10px 10px 0;
+    margin-left: 2rem;
+}
+
+.workingon-details-description h1 {
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.workingon-details-description p {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.workingon-details-description ul {
+    list-style: none;
+    padding: 0;
+}
+
+.workingon-details-description ul li {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.team-members {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.team-members p {
+    width: 100%;
+    font-size: 13px;
+    margin: 0;
+}
+
+.workingon-btn {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #000000;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.workingon-btn:hover {
+    background: #ff5f5f;
+}
+
+/* Media Queries */
+
+@media (max-width: 1024px) {
+    .workingon-container {
+        padding: 1rem;
+    }
+    
+    .workingon-details {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .workingon-details-thumbnail {
+        width: 100%;
+    }
+    
+    .profile-heading a h1 {
+        font-size: 1.5rem;
+    }
+
+    .workingon-details-description {
+        width: 100%;
+    }
+
+    .workingon-details-description h1 {
+        font-size: 1.2rem;
+    }
+
+    .workingon-details-description p {
+        font-size: 1.1rem;
+    }
+
+    .workingon-details-description ul li {
+        font-size: 0.9rem;
+    }
+
+    .team-members p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .workingon-container {
+        max-width: 90%;
+    }
+
+    .profile-heading a h1 {
+        font-size: 1.2rem;
+    }
+
+    .workingon-details-description h1 {
+        font-size: 1rem;
+    }
+
+    .workingon-details-description p {
+        font-size: 1rem;
+    }
+
+    .workingon-details-description ul li {
+        font-size: 0.8rem;
+    }
+
+    .team-members p {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 500px) {
+    .profile-heading {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .profile-heading p{
+        margin: 0 0 0 auto;
+    }
+    
+    .profile-heading a h1 {
+        font-size: 1rem;
+    }
+
+    .workingon-details-description h1 {
+        font-size: 0.9rem;
+    }
+
+    .workingon-details-description p {
+        font-size: 0.9rem;
+    }
+
+    .workingon-details-description ul li {
+        font-size: 0.7rem;
+    }
+
+    .team-members p {
+        font-size: 10px;
+    }
+    .getstarted-main-container{
+        max-width: 100%;
+    }
+    .workingon-container{
+        max-width: 100%;
+    }
+}

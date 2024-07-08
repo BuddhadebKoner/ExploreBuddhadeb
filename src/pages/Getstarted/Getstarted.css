@@ -1,13 +1,9 @@
 .getstarted-main-container{
     width: 100vw;
-    height: 60vh;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     background-color: transparent;
-}
-
-.getstarted-main-container img{
-    width: 300px;
 }

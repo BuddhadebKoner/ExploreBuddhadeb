@@ -18,6 +18,11 @@
     width: fit-content;
     height: fit-content;
 }
+.profile-name h1{
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
 .profile-name p{
     color: #7f7f7f;
 }

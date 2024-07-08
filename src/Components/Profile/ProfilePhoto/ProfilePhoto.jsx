@@ -12,7 +12,7 @@ export default function ProfilePhoto() {
                 <img src={assets.profile} alt="" />
             </div>
             <div className="profile-name">
-                <h3>Buddhadeb Koner</h3>
+                <h1>Buddhadeb Koner</h1>
                 <p>{profiledetails.bio}</p>
             </div>
 
