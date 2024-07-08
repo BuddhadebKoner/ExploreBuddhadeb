@@ -13,11 +13,15 @@ import Close from './Close.png'
 import more from './more.png'
 import hamburger from './menu_hamburgur.svg'
 import close from './close.svg'
+import darkMode from './Mode/dark.svg'
+import lightMode from './Mode/light.svg'
 
 const heroBanner = 'https://i.ibb.co/9VHf0k3/hero-banner.webp'
 const profile = 'https://i.ibb.co/56hzHJn/profile.jpg'
 
 const assets = {
+    darkMode,
+    lightMode,
     Donate,
     fb,
     heroBanner,

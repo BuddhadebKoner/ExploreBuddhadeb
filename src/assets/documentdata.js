@@ -8,11 +8,11 @@ export const documentdata = {
 }
 
 export const profiledetails = {
-    bio: "Ego = 1 / Knowledge",
+    bio: "Programer"
 }
 
 export const AboutKeywords = {
-    key1: "Programer",
+    key1: "Frontend Developer",
     key2: "Engineer",
     key3: "Tech&Science",
     key4: "Meme Lover",

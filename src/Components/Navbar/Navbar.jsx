@@ -50,18 +50,16 @@ export default function Navbar() {
           </NavLink>
           <NavLink
             to={'/login'}
-            className={({ isActive }) =>
-              isActive ? "nav-links-active" : "nav-links-normal"
-            }
-          >
-            Login
-          </NavLink>
-          <NavLink
-            to={'/aboutwebinfo'}
             className='super'
           >
             TESTIMONIALS
           </NavLink>
+          <button>
+            <img src={assets.lightMode} alt="" />
+          </button>
+          <button>
+            <img src={assets.darkMode} alt="" />
+          </button>
         </div>
         <div className="hamburger-container" onClick={toggleMenu}>
           {!isMenuOpen ? (
