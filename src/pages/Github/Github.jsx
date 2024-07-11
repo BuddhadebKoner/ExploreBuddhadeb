@@ -1,9 +1,8 @@
 import React from 'react'
 import './Github.css'
-import Resume from '../../assets/Resume'
+import ApiDataResponce from '../../Api/apiresponce'
 
 export default function Github() {
-  const githubdata = Resume.githubdata;
   return (
     <>
       <div className="github-main-container">
@@ -11,15 +10,15 @@ export default function Github() {
           <h2 className='git_subheadings'>Explore</h2>
           <>
             <h1 align="center" >
-              <img className='headline-style' src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=👋+Hello,+Future+Collaborator!;🇮🇳+i'am+Buddhadeb+Koner;" />
+              <img className='headline-style' src={ApiDataResponce.githubData.heroText} />
             </h1>
             <p
               className='dece-paragraph'
-              align="center" dangerouslySetInnerHTML={{ __html: Resume.githubdata.desc }}></p>
+              align="center" dangerouslySetInnerHTML={{ __html: ApiDataResponce.githubData.desc }}></p>
             <br />
             <h2 className='git_subheadings'>Known  Technologysnpm</h2>
             <div align="center" className='langiage-icons'>
-              {githubdata.language.split(',').map((skill, index) => (
+              {ApiDataResponce.githubData.language.split(',').map((skill, index) => (
                 <img
                   key={index}
                   src={`https://skillicons.dev/icons?i=${skill}`}
@@ -31,12 +30,12 @@ export default function Github() {
             <h2 className='git_subheadings'>Commits</h2>
             <div className='commits-github' >
               <img
-                src="https://github-readme-streak-stats.herokuapp.com/?user=BuddhadebKoner&theme=dark&hide_border=false"
+                src={ApiDataResponce.githubData.githubCommits}
                 alt=""
               />
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <img
-                src="https://github-readme-stats.vercel.app/api/top-langs/?username=BuddhadebKoner&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact"
+                src={ApiDataResponce.githubData.mostUseLang}
                 alt=""
               />
             </div>
@@ -45,7 +44,7 @@ export default function Github() {
             <p />
             <div>
               <img
-                src="https://github-profile-trophy.vercel.app/?username=BuddhadebKoner&theme=radical&no-frame=false&no-bg=true&margin-w=10"
+                src={ApiDataResponce.githubData.trophys}
                 alt=""
               />
             </div>

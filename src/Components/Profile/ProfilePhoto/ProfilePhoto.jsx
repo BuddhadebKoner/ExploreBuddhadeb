@@ -1,6 +1,6 @@
 import React from 'react'
 import assets from '../../../assets/icons/icons'
-import { profiledetails } from '../../../assets/documentdata'
+import ApiDataResponce from '../../../Api/apiresponce'
 
 // styles are here
 import '../../../Styles/ProfilePhoto.css'
@@ -13,7 +13,7 @@ export default function ProfilePhoto() {
             </div>
             <div className="profile-name">
                 <h1>Buddhadeb Koner</h1>
-                <p>{profiledetails.bio}</p>
+                <p>{ApiDataResponce.profileDetails.bio}</p>
             </div>
 
         </>

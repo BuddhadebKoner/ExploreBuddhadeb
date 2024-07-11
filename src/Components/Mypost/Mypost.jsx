@@ -1,5 +1,4 @@
 import React from 'react'
-// import ProfileDetails from './ProfileDetails/ProfileDetails'
 import Postdetails from '../Postdetails/Postdetails'
 
 

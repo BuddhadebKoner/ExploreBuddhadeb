@@ -1,17 +1,15 @@
 import React from 'react';
-import currentpagecontent from '../../assets/documentdata.js';
 import '../../Styles/Currentproject.css';
+import ApiDataResponce from '../../Api/apiresponce.js';
 
 const Currentproject = () => {
-  const { welcomeMessage, introduction, projects } = currentpagecontent;
-
   return (
     <div className="current-project-box">
       <div className="current-project-container">
-        <h2>{welcomeMessage}</h2>
-        <p>{introduction}</p>
+        <h2>{ApiDataResponce.currentpagecontent.welcomeMessage}</h2>
+        <p>{ApiDataResponce.currentpagecontent.introduction}</p>
         
-        {projects.map((project, index) => (
+        {ApiDataResponce.currentpagecontent.projects.map((project, index) => (
           <div key={index} className="project-card">
             <h3>{project.title}</h3>
             <p>{project.description}</p>

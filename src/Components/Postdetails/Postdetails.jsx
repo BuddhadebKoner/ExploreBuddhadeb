@@ -1,7 +1,7 @@
 import React from 'react';
 import Likebtn from '../Likebtn/Likebtn';
 import ProfileDetails from '../Mypost/ProfileDetails/ProfileDetails';
-import { assets, numberOfAssets } from '../../assets/postimg/postimg';
+import ApiDataResponce from '../../Api/apiresponce';
 
 // styles are here
 import '../../Styles/Postdetails.css';
@@ -12,7 +12,7 @@ export default function Postdetails() {
    React.useEffect(() => {
       const fetchPosts = async () => {
          try {
-            setPosts(Object.values(assets));
+            setPosts(Object.values(ApiDataResponce.assets));
          } catch (error) {
             console.error('Error fetching posts:', error);
          }
@@ -24,7 +24,7 @@ export default function Postdetails() {
 
    return (
       <>
-         {numberOfAssets !== 0 && (
+         {ApiDataResponce.numberOfAssets !== 0 && (
             <>
                {posts.map((post, index) => (
                   <div key={index} className="postdetails-container">

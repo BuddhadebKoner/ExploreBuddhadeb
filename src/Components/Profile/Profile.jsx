@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import ProfilePhoto from './ProfilePhoto/ProfilePhoto';
 import assets from '../../assets/icons/icons';
-import { documentdata } from '../../assets/documentdata';
-import Model from './ProfilePhoto/Model/Model';
 import { Dropdown } from "flowbite-react";
 
 // styles are here 
 import '../../Styles/Profile.css';
+import ApiDataResponce from '../../Api/apiresponce';
 
 export default function Profile() {
 
@@ -28,22 +27,22 @@ export default function Profile() {
 
                <div className="Dropdown-Container">
                   <Dropdown className='follow-me-btn' label="Follow me" dismissOnClick={false}>
-                     <a href={documentdata.fblink} target='_blank'>
+                     <a href={ApiDataResponce.aboutdata.fblink} target='_blank'>
                         <Dropdown.Item className='dropdown-items'>
                            <img src={assets.fb} alt="" />
                         </Dropdown.Item>
                      </a>
-                     <a href={documentdata.xlink} target='_blank'>
+                     <a href={ApiDataResponce.aboutdata.xlink} target='_blank'>
                         <Dropdown.Item className='dropdown-items'>
                            <img src={assets.x} alt="" />
                         </Dropdown.Item>
                      </a>
-                     <a href={documentdata.linkedinlink} target='_blank'>
+                     <a href={ApiDataResponce.aboutdata.linkedinlink} target='_blank'>
                         <Dropdown.Item className='dropdown-items'>
                            <img src={assets.linkedin} alt="" />
                         </Dropdown.Item>
                      </a>
-                     <a href={documentdata.gitlink} target='_blank'>
+                     <a href={ApiDataResponce.aboutdata.gitlink} target='_blank'>
                         <Dropdown.Item className='dropdown-items'>
                            <img src={assets.github} alt="" />
                         </Dropdown.Item>

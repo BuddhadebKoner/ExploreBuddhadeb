@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../Styles/Footer.css';
-import { documentdata } from '../../assets/documentdata';
+import ApiDataResponce from '../../Api/apiresponce';
 
 export default function Footer() {
   return (
@@ -31,11 +31,11 @@ export default function Footer() {
         <div className="footer-section">
           <h3>Connect</h3>
           <div className="links">
-            <a href={documentdata.gitlink} target='_blank' rel="noopener noreferrer">GitHub</a>
-            <a href={documentdata.xlink} target='_blank' rel="noopener noreferrer">X</a>
-            <a href={documentdata.linkedinlink} target='_blank' rel="noopener noreferrer">LinkedIn</a>
-            <a href={documentdata.instaLink} target='_blank' rel="noopener noreferrer">Instagram</a>
-            <a href={documentdata.fblink} target='_blank' rel="noopener noreferrer">Facebook</a>
+            <a href={ApiDataResponce.aboutdata.gitlink} target='_blank' rel="noopener noreferrer">GitHub</a>
+            <a href={ApiDataResponce.aboutdata.xlink} target='_blank' rel="noopener noreferrer">X</a>
+            <a href={ApiDataResponce.aboutdata.linkedinlink} target='_blank' rel="noopener noreferrer">LinkedIn</a>
+            <a href={ApiDataResponce.aboutdata.instaLink} target='_blank' rel="noopener noreferrer">Instagram</a>
+            <a href={ApiDataResponce.aboutdata.fblink} target='_blank' rel="noopener noreferrer">Facebook</a>
           </div>
         </div>
       </div>

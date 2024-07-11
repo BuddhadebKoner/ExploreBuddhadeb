@@ -11,6 +11,7 @@ import Liked from './liked.png';
 import Like from './like.png'
 import Close from './Close.png'
 import more from './more.png'
+
 import hamburger from './menu_hamburgur.svg'
 import close from './close.svg'
 import darkMode from './Mode/dark.svg'
