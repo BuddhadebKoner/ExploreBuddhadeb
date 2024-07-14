@@ -4,7 +4,7 @@ import assets from '../../assets/icons/icons';
 
 export default function Workingon({ data }) {
    return (
-      <div className="workingon-container">
+      <div className="workingon-container glass-bg">
          <div className="profile-heading">
             <a target="_blank" href={data.githubLink} rel="noopener noreferrer">
                <img src={assets.github} alt="GitHub" />

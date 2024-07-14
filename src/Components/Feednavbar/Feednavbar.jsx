@@ -22,7 +22,7 @@ export default function Feednavbar() {
       <Helmet>
         <title>{currentTitle}</title>
       </Helmet>
-      <div className="feednavbar-container">
+      <div className="feednavbar-container glass-bg">
         <NavLink
           to="/explore"
           className={({ isActive }) =>

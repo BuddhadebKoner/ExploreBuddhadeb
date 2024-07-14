@@ -13,8 +13,8 @@ export default function AboutCard() {
    return (
       <>
          <div className="about-container-fullbox">
-            <div className={`about-card ${expanded ? "expanded" : ""}`}>
-               <h3 className="about-heading">About</h3>
+            <div className={`about-card glass-bg ${expanded ? "expanded" : "glass-bg"}`}>
+               <h3 className="about-heading">About Me</h3>
                <p className={`description ${expanded ? "expanded" : ""}`}>
                   {ApiDataResponce.aboutdata.about}
                </p>
@@ -22,11 +22,6 @@ export default function AboutCard() {
                   {expanded ? "See Less" : "See More"}
                </button>
                <div className="about-media-links">
-                  <a href={ApiDataResponce.aboutdata.gitlink} target="_blank">
-                     {" "}
-                     <img src={assets.link} className="link-icons" alt="" />
-                     git Hub
-                  </a>
                   <div className="media-icons-links">
                      <a href={ApiDataResponce.aboutdata.fblink} target="_blank">
                         <img src={assets.fb} alt="" />
@@ -47,10 +42,10 @@ export default function AboutCard() {
                         <img src={assets.github} alt="" />
                      </a>
                   </div>
-                  <div className="about-tags">
+                  <div className="skills-list about-tags">
                      {Object.keys(ApiDataResponce.aboutKeywords).map(
                         (key, index) => (
-                           <p key={index}>
+                           <p className="skill-item" key={index}>
                               {ApiDataResponce.aboutKeywords[key]}
                            </p>
                         )

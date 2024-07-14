@@ -13,9 +13,14 @@ const ApiDataResponce = {
          position: "Freshers",
          company: "Freelancer , content creator, Full Time Programmer",
          duration: "[ 2020.. on words ]",
-         responsibilities: [
-            "Exploring new Technologies",
+      },
+      responsibilities: {
+         title: "Responsibilities",
+         list: [
+            "Developed and maintained web applications for clients",
             "Collaborated with team members on various projects",
+            "Assisted in the design and implementation of new features",
+            "Conducted code reviews and provided feedback to team members",
          ],
       },
       skills: [
@@ -41,7 +46,6 @@ const ApiDataResponce = {
       },
    },
    githubData: {
-      desc: "🚀 Pursuing B Tech in Computer Science and Engineering <br /> 👯 Eager to collaborate on Database languages <br /> 🤝 Open to collaboration and excited to learn from you <br /> 🌱 Currently immersed in the world of Python web development <br /> 💬 Ask me about Content creation <br />⚡ Fun fact: Follow me now for exciting updates!",
       language:
          "javascript,c,cpp,python,django,git,figma,react,nodejs,expressjs,mongo,vercel,ubuntu",
       heroText:
@@ -54,7 +58,7 @@ const ApiDataResponce = {
          "https://github-profile-trophy.vercel.app/?username=BuddhadebKoner&theme=radical&no-frame=false&no-bg=true&margin-w=10",
    },
    aboutdata: {
-      about: "Pursuing BTech | Web Developer with 2 years experience | Enthusiast in C & Python | Wizard of React Js, Express Js & NODE | Experienced Frontend developer",
+      about: "Welcome to my corner of the digital universe! I'm a passionate BTech student and web developer who's on a relentless quest for knowledge and innovation. Currently navigating my BTech journey, I'm also deeply engrossed in refining my skills as a web developer, with two years of hands-on experience under my belt. Proficient in React Js, Express Js, and NODE, I thrive on the challenge of turning code into captivating user experiences, infusing each project with a touch of magic. Fueled by curiosity and passion, I delve into various technologies, from C++ to Python, always approaching challenges with excitement. As a second-year student, I'm committed to continuous learning and growth, shaping the future with each line of code I write. I invite fellow developers, potential collaborators, and tech enthusiasts alike to connect and join me on this journey. Together, let's harness the power of technology to create a brighter, more vibrant future for generations to come. Let's dive in and code the future together!",
       fblink: "https://www.facebook.com/jeet.koner.36",
       xlink: "https://twitter.com/buddhadeb_koner",
       linkedinlink: "https://www.linkedin.com/in/buddhadeb-koner-8501b3231/",

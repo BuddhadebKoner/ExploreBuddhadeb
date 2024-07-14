@@ -54,12 +54,6 @@ export default function Navbar() {
           >
             TESTIMONIALS
           </NavLink>
-          <button>
-            <img src={assets.lightMode} alt="" />
-          </button>
-          <button>
-            <img src={assets.darkMode} alt="" />
-          </button>
         </div>
         <div className="hamburger-container" onClick={toggleMenu}>
           {!isMenuOpen ? (

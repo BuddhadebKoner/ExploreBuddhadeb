@@ -25,12 +25,12 @@ export default function Feedback() {
     <>
       <Hero />
       <div className="feedsec-main-full-box">
-        <div className="feedback-container">
+        <div className="feedback-container glass-bg">
           {state.succeeded ? (
-            <p>Form submitted successfully!</p>
+            <p className='submitting-sucess' >Form submitted successfully!</p>
           ) : (
             <>
-              <h3 className='feedback-container-heading'>Drop FeedBack here</h3>
+              <h3 className='feedback-container-heading'>Drop Feed Back here</h3>
               <form onSubmit={handleFormSubmit}>
                 <label htmlFor="name" className="feedback-label"></label>
                 <input

@@ -23,6 +23,9 @@
     height: fit-content;
     display: flex;
     justify-content: space-between;
+    font-size: 2rem;
+    color: var(--basic-100);
+    font-weight: 700;
 }
 
 .feed-post-head h3{

@@ -21,8 +21,8 @@
 }
 
 .post-profile-threedots {
-    width: 20px;
-    opacity: 0.5;
+    width: 40px;
+    opacity: 1;
 }
 
 .main-container-profile-details {
@@ -35,6 +35,9 @@
 
 .image-profile-threedot-container {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
     gap: 20px;
 }
 
@@ -44,7 +47,10 @@
 }
 
 .see-original-post {
-    color: black;
+    color: var(--black);
+    background-color: var(--primary-400);
+    border-radius: 5px;
+    padding: 0 10px;
     font-size: 12px;
 }
 

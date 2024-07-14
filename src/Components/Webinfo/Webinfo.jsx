@@ -4,7 +4,7 @@ import '../../Styles/Webinfo.css';
 export default function Webinfo() {
   return (
     <div className="webinfo-container">
-      <div className="webinfo-content">
+      <div className="webinfo-content glass-bg">
         <div className="webinfo-section">
           <h1 className="webinfo-section-title">Skills and Interests</h1>
           <p className="webinfo-section-description">

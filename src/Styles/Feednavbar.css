@@ -1,7 +1,9 @@
 .feednavbar-container{
-    width: 58rem;
+    width: 954px;
     height: 61px;
-    background-color: transparent; 
+    margin-top: 20px;
+    border-radius: 7px;
+    color: var(--basic-100);
     display: flex;
     align-items: center;
     justify-content: start;
@@ -20,7 +22,7 @@
     color: red;
 }
 .normal-link{
-    color: black;
+    color: var(--black);
 }
 
 

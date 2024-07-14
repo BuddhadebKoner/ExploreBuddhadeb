@@ -8,10 +8,12 @@ export default function Resume() {
    return (
       <>
          <div className="resume-main-container">
-            <div className="resume-container">
+            <div className="resume-container glass-bg">
                <div className="header-section">
                   <h1 className="name">{ApiDataResponce.resumeData.name}</h1>
-                  <p className="job-title">{ ApiDataResponce.resumeData.jobTitle }</p>
+                  <p className="job-title">
+                     {ApiDataResponce.resumeData.jobTitle}
+                  </p>
                </div>
                <div className="education-section">
                   <h2 className="section-title">Education</h2>
@@ -35,29 +37,31 @@ export default function Resume() {
                         {ApiDataResponce.resumeData.experience.company},{" "}
                         {ApiDataResponce.resumeData.experience.duration}
                      </li>
-                     <li className="responsibilities-title">
-                        Responsibilities:
-                     </li>
-                     <ul className="responsibilities-list">
-                        {ApiDataResponce.resumeData.experience.responsibilities.map(
-                           (responsibility, index) => (
-                              <li className="responsibility-item" key={index}>
-                                 {responsibility}
-                              </li>
-                           )
-                        )}
-                     </ul>
+                  </ul>
+               </div>
+               <div className="responsibility-section">
+                  <h2 className="section-title">
+                     {ApiDataResponce.resumeData.responsibilities.title}
+                  </h2>
+                  <ul className="responsibility-list">
+                     {ApiDataResponce.resumeData.responsibilities.list.map(
+                        (responsibility, index) => (
+                           <li className="responsibility-item" key={index}>
+                              {responsibility}
+                           </li>
+                        )
+                     )}
                   </ul>
                </div>
                <div className="skills-section">
                   <h2 className="section-title">Skills</h2>
-                  <ul className="skills-list">
+                  <div className="skills-list">
                      {ApiDataResponce.resumeData.skills.map((skill, index) => (
-                        <li className="skill-item" key={index}>
+                        <p className="skill-item" key={index}>
                            {skill}
-                        </li>
+                        </p>
                      ))}
-                  </ul>
+                  </div>
                </div>
                <div className="contact-section">
                   <h2 className="section-title">Contact</h2>

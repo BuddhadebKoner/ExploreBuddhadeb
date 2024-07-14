@@ -2,17 +2,19 @@
     height: 115px;
     width: 100%;
     max-width: 954px;
-    margin: 0 auto;
-    overflow: hidden;
-    background-color: transparent;
-    color: black;
+    margin: 20px auto 0 auto;
+    padding: 14px;
+    border-radius: 7px;
+    /* background-color: var(--cards-bg); */
     display: flex;
     flex-wrap: wrap;
+    z-index: 800;
 }
 
 .profile-photo {
-    width: 50%;
+    width: fit-content;
     height: 100%;
+    margin-right: auto;
     background-color: transparent;
     color: black;
     display: flex;
@@ -20,8 +22,10 @@
 }
 
 .follow-me {
-    width: 50%;
+    width: fit-content;
     height: 100%;
+    margin-left: auto;
+    gap: 10px;
     background-color: transparent;
     color: black;
     display: flex;
@@ -62,15 +66,23 @@
     background-color: #e4e4e4;
 }
 
+.mail-btn {
+    width: 46px;
+    height: 46px;
+}
+
 .mail-btn,
 .threedot-btn {
     background-color: #f7f7f7;
-    width: 46px;
-    height: 46px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+}
+
+.threedot-btn img {
+    width: 46px;
+    height: 46px;
 }
 
 .threedots-popup {
@@ -84,11 +96,6 @@
     padding: 7px;
     border-radius: 5px;
     overflow: hidden;
-}
-
-.threedots-popup p {
-    margin: 0px;
-    padding: 0px;
 }
 
 .Dropdown-Container button span {
@@ -107,6 +114,7 @@
     width: 150px;
     height: 50px;
     background: #f7f7f7;
+    border-radius: 7px;
 }
 
 .dropdown-items {
@@ -123,9 +131,21 @@
     margin: 5px 0;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background 0.3s, box-shadow 0.3s;
+    transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+    cursor: pointer;
 }
-.dropdown-items img{
+
+.dropdown-items:hover {
+    background: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+.dropdown-items h1 {
+    margin-left: auto;
+}
+
+.dropdown-items img {
     width: 20px;
 }
 
@@ -197,7 +217,8 @@
         justify-content: space-evenly;
         /* margin-bottom: 1rem;     */
     }
-    .profile-photo{
+
+    .profile-photo {
         justify-content: flex-start;
     }
 
@@ -220,7 +241,8 @@
         margin: 0;
         border-radius: 4px;
     }
-    .dropdown-items img{
+
+    .dropdown-items img {
         width: 20px;
     }
 
@@ -229,6 +251,7 @@
         width: 35px;
         height: 35px;
     }
+
     .Dropdown-Container span {
         padding: 8px;
         font-size: 10px;

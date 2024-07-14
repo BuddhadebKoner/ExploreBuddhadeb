@@ -15,7 +15,7 @@ export default function Profile() {
 
    return (
       <>
-         <div className="profile-container ">
+         <div className="profile-container glass-bg">
             <div className="profile-photo">
                <ProfilePhoto />
             </div>
@@ -30,21 +30,25 @@ export default function Profile() {
                      <a href={ApiDataResponce.aboutdata.fblink} target='_blank'>
                         <Dropdown.Item className='dropdown-items'>
                            <img src={assets.fb} alt="" />
+                           <h1>Facebook</h1>
                         </Dropdown.Item>
                      </a>
                      <a href={ApiDataResponce.aboutdata.xlink} target='_blank'>
                         <Dropdown.Item className='dropdown-items'>
                            <img src={assets.x} alt="" />
+                           <h1>x</h1>
                         </Dropdown.Item>
                      </a>
                      <a href={ApiDataResponce.aboutdata.linkedinlink} target='_blank'>
                         <Dropdown.Item className='dropdown-items'>
                            <img src={assets.linkedin} alt="" />
+                           <h1>Linkedin</h1>
                         </Dropdown.Item>
                      </a>
                      <a href={ApiDataResponce.aboutdata.gitlink} target='_blank'>
                         <Dropdown.Item className='dropdown-items'>
                            <img src={assets.github} alt="" />
+                           <h1>Github</h1>
                         </Dropdown.Item>
                      </a>
                   </Dropdown>
@@ -56,14 +60,14 @@ export default function Profile() {
                   </a>
                </div>
 
-               <div className="">
+               <div className="threedot-btn">
                   <NavLink
                      to={'/aboutwebinfo'}
                      className='threedot-btn hover-btn'
                      onMouseEnter={handleMouseEnter}
                      onMouseLeave={handleMouseLeave}
                   >
-                     <img src={assets.threeDot} alt="" className='mail-icon' />
+                     <img src={assets.threeDotWhite} alt="" className='mail-icon' />
                   </NavLink>
                </div>
             </div>

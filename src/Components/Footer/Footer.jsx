@@ -6,16 +6,16 @@ import ApiDataResponce from '../../Api/apiresponce';
 export default function Footer() {
   return (
     <footer className="footer">
-      <div className="footer-container">
+      <div className="footer-container glass-bg">
         <div className="footer-section">
           <h3>About Us</h3>
           <p>
             31st March 2024 <br /> This is the first project of my road to learning React.js<br /> to build my own portfolio, credit to some YouTube channels
             <br />
             <div className="credit-links">
-              1. <a href="https://www.youtube.com/@KG_Coding" target='_blank' rel="noopener noreferrer">Prasant Sir</a> &nbsp;
-              2. <a href="https://www.youtube.com/@ThapaTechnical" target='_blank' rel="noopener noreferrer">Thapa Sir</a> &nbsp;
-              3. <a href="https://www.youtube.com/@chaiaurcode" target='_blank' rel="noopener noreferrer">Hitesh Sir</a>&nbsp;
+              <a href="https://www.youtube.com/@KG_Coding" target='_blank' rel="noopener noreferrer">1. Prasant Sir</a> &nbsp;
+              <a href="https://www.youtube.com/@ThapaTechnical" target='_blank' rel="noopener noreferrer">2. Thapa Sir</a> &nbsp;
+              <a href="https://www.youtube.com/@chaiaurcode" target='_blank' rel="noopener noreferrer">3. Hitesh Sir</a>&nbsp;
             </div>
           </p>
         </div>

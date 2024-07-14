@@ -15,6 +15,88 @@
     font-family: 'Nunito', 'Arial', 'Helvetica', sans-serif;
 }
 
+/* color code contsnts */
+:root {
+    --white: #fff;
+    --black: #000;
+    --transparent: transparent;
+
+    --basic-100: #FFFFFF;
+    --basic-200: #F7F9FC;
+    --basic-300: #EDF1F7;
+    --basic-400: #E4E9F2;
+    --basic-500: #C5CEE0;
+    --basic-600: #8F9BB3;
+    --basic-700: #2E3A59;
+    --basic-800: #222B45;
+    --basic-900: #1A2138;
+    --basic-1000: #151A30;
+    --basic-1100: #101426;
+    --cards-bg: #222b45;
+    --primary-100: #fcebd5; 
+    --primary-200: #fdcea0;
+    --primary-300: #feb16b;
+    --primary-400: #fe9435;
+    --primary-500: #ff7700;
+    --primary-600: #d36300;
+    --primary-700: #a74e00; 
+    --primary-800: #7b3a00;
+    --primary-900: #4f2500;
+    --secondary-100: #CAF0FD;
+    --secondary-200: #97DCFB;
+    --secondary-300: #62C0F5;
+    --secondary-400: #3BA2EC;
+    --secondary-500: #0077E0;
+    --secondary-600: #005CC0;
+    --secondary-700: #0044A1;
+    --secondary-800: #003081;
+    --secondary-900: #00226B;
+    --success-100: #F4FDE1;
+    --success-200: #E8FBC4;
+    --success-300: #D4F3A3;
+    --success-400: #BDE788;
+    --success-500: #9ED762;
+    --success-600: #7CB847;
+    --success-700: #5D9A31;
+    --success-800: #417C1F;
+    --success-900: #2D6712;
+
+    --danger-100: #FBD2C8;
+    --danger-200: #F79E94;
+    --danger-300: #E75D5C;
+    --danger-400: #CF3341;
+    --danger-500: #B00020;
+    --danger-600: #970029;
+    --danger-700: #7E002E;
+    --danger-800: #66002F;
+    --danger-900: #54002F;
+    --info-100: #dbf5e9;
+    --info-200: #a7e2c3;
+    --info-300: #73cf9c;
+    --info-400: #3fbb76;
+    --info-500: #0ba84f;
+    --info-600: #098c42;
+    --info-700: #087135;
+    --info-800: #065528;
+    --info-900: #04391b;
+    --warning-100: #FEF5D7;
+    --warning-200: #FEE9B0;
+    --warning-300: #FDD989;
+    --warning-400: #FCC96B;
+    --warning-500: #FBB03B;
+    --warning-600: #D78D2B;
+    --warning-700: #B46D1D;
+    --warning-800: #915012;
+    --warning-900: #783C0B;
+}
+
+
+/* blur glass bg  */
+.glass-bg{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(40px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 #root {
     width: 100vw;
     height: fit-content;
@@ -26,6 +108,11 @@ body {
     height: fit-content;
     overflow-x: hidden;
     overflow-y: auto;
+    /* background-color: var(--basic-1100); */
+    background-image: url(../src/experiment/qFDbhtV-abstract-blue-wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 a {
@@ -92,6 +179,4 @@ desktop : 1024px
 @media (max-width: 768px) {}
 
 /* Mobile */
-@media (max-width: 500px) {
-
-}
+@media (max-width: 500px) {}

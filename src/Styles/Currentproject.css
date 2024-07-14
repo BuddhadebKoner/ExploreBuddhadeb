@@ -4,32 +4,42 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--transparent);
 }
 
 .current-project-container {
   width: 954px;
   margin-top: 20px;
-  background-color: transparent;
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15), 0px 2px 5px rgba(0, 0, 0, 0.05), 0px 8px 40px rgba(0, 0, 0, 0.04);
   padding: 16px 5rem;
   border-radius: 14px;
   overflow: hidden;
   transition: height 0.3s ease;
+  color: var(--basic-100);
 }
 
 .project-card {
-  border: 1px solid #ccc;
   border-radius: 5px;
   padding: 20px;
   margin-top: 10px;
+  background-color: var(--cards-bg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+  transform: scale(1.02);
 }
 
 .project-card h3 {
-  color: #333;
+  color: var(--basic-100);
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 
 .project-card p {
-  color: #666;
+  color: var(--basic-100);
 }
 
 .project-card a {
@@ -44,66 +54,76 @@
   text-decoration: underline;
 }
 
+.wellcome-introduction-divs {
+  width: 100%;
+  height: fit-content;
+  margin: 1rem 0;
+}
 
+.wellcome-introduction-divs h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--basic-100);
+}
 
 /* Desktop */
 @media (max-width: 1024px) {
   .current-project-container {
-      width: 80%;
-      padding: 16px 3rem;
+    width: 80%;
+    padding: 16px 3rem;
   }
 
   .project-card {
-      margin-top: 15px;
+    margin-top: 15px;
   }
 }
 
 /* Tablet */
 @media (max-width: 768px) {
   .current-project-container {
-      width: 90%;
-      padding: 16px 2rem;
+    width: 90%;
+    padding: 16px 2rem;
   }
 
   .project-card {
-      padding: 15px;
-      margin-top: 12px;
+    padding: 15px;
+    margin-top: 12px;
   }
 
   .project-card h3 {
-      font-size: 1.1rem;
+    font-size: 1.1rem;
   }
 
   .project-card p {
-      font-size: 0.9rem;
+    font-size: 0.9rem;
   }
 }
 
 /* Mobile */
 @media (max-width: 500px) {
   .current-project-box {
-      padding: 0 2px;
+    padding: 0 2px;
   }
 
   .current-project-container {
-      width: 100%;
-      padding: 16px 1rem;
+    width: 100%;
+    padding: 16px 1rem;
   }
 
   .project-card {
-      padding: 10px;
-      margin-top: 10px;
+    padding: 10px;
+    margin-top: 10px;
   }
 
   .project-card h3 {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 
   .project-card p {
-      font-size: 0.85rem;
+    font-size: 0.85rem;
   }
 
   .project-card a {
-      font-size: 0.9rem;
+    font-size: 0.9rem;
   }
 }

@@ -6,15 +6,12 @@ export default function Github() {
   return (
     <>
       <div className="github-main-container">
-        <div className="github-container">
+        <div className="github-container glass-bg">
           <h2 className='git_subheadings'>Explore</h2>
           <>
             <h1 align="center" >
               <img className='headline-style' src={ApiDataResponce.githubData.heroText} />
             </h1>
-            <p
-              className='dece-paragraph'
-              align="center" dangerouslySetInnerHTML={{ __html: ApiDataResponce.githubData.desc }}></p>
             <br />
             <h2 className='git_subheadings'>Known  Technologysnpm</h2>
             <div align="center" className='langiage-icons'>

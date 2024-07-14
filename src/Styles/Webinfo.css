@@ -9,6 +9,8 @@
   .webinfo-content {
     width: 90%;
     max-width: 900px;
+    padding: 25px;
+    border-radius: 14px;
   }
   
   .webinfo-section {
@@ -19,12 +21,12 @@
   .webinfo-section-title {
     font-size: 2.5rem;
     margin-bottom: 10px;
-    color: #333;
+    color: var(--basic-100);
   }
   
   .webinfo-section-description {
     font-size: 1.2rem;
-    color: #555;
+    color: var(--basic-100);
   }
   
   .webinfo-list {
@@ -39,12 +41,13 @@
   .webinfo-item-title {
     font-size: 1.8rem;
     margin-bottom: 10px;
-    color: #333;
+    color: var(--basic-100);
+    font-weight: 600;
   }
   
   .webinfo-item-description {
     font-size: 1.2rem;
-    color: #666;
+    color: var(--basic-100);
   }
   
   /* Tablet */
