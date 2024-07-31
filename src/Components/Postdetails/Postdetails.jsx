@@ -1,4 +1,5 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
 import Likebtn from '../Likebtn/Likebtn';
 import ProfileDetails from '../Mypost/ProfileDetails/ProfileDetails';
 import ApiDataResponce from '../../Api/apiresponce';
@@ -8,44 +9,70 @@ import '../../Styles/Postdetails.css';
 
 export default function Postdetails() {
    const [posts, setPosts] = React.useState([]);
+   const [loading, setLoading] = React.useState(true);
+   const { ref, inView } = useInView({
+      triggerOnce: true,
+      threshold: 0.1,
+   });
 
    React.useEffect(() => {
-      const fetchPosts = async () => {
-         try {
-            setPosts(Object.values(ApiDataResponce.assets));
-         } catch (error) {
-            console.error('Error fetching posts:', error);
-         }
-      };
+      if (inView) {
+         const fetchPosts = async () => {
+            try {
+               // Simulate network delay
+               setTimeout(() => {
+                  setPosts(Object.values(ApiDataResponce.assets));
+                  setLoading(false);
+               }, 1000);
+            } catch (error) {
+               console.error('Error fetching posts:', error);
+               setLoading(false);
+            }
+         };
 
-      fetchPosts();
-   }, []);
-
+         fetchPosts();
+      }
+   }, [inView]);
 
    return (
-      <>
-         {ApiDataResponce.numberOfAssets !== 0 && (
+      <div ref={ref}>
+         {loading ? (
             <>
-               {posts.map((post, index) => (
-                  <div key={index} className="postdetails-container">
-                     <ProfileDetails
-                        media={post.media}
-                        Medialink={post.links}
-                        postdate={post.date}
-                        profilelink={post.profilelink}
-                     />
-                     <div className="post">
-                        <img src={post.image} className="postimage" alt="" />
-                        <div className="post-details-description">
-                           <h3>{post.title}</h3>
-                           <p>{post.description}</p>
-                           <Likebtn />
-                        </div>
-                     </div>
+               {Array.from({ length: 4 }).map((_, index) => (
+                  <div key={`skeleton-${index}`} className="skeleton-wrapper">
+                     <div className="skeleton skeleton-image"></div>
+                     <div className="skeleton skeleton-text" style={{ width: '70%' }}></div>
+                     <div className="skeleton skeleton-text" style={{ width: '90%' }}></div>
+                     <div className="skeleton skeleton-text" style={{ width: '60%' }}></div>
                   </div>
                ))}
             </>
+         ) : (
+            <>
+               {ApiDataResponce.numberOfAssets !== 0 && (
+                  <>
+                     {posts.map((post, index) => (
+                        <div key={index} className="postdetails-container">
+                           <ProfileDetails
+                              media={post.media}
+                              Medialink={post.links}
+                              postdate={post.date}
+                              profilelink={post.profilelink}
+                           />
+                           <div className="post">
+                              <img src={post.image} className="postimage" alt="" />
+                              <div className="post-details-description">
+                                 <h3>{post.title}</h3>
+                                 <p>{post.description}</p>
+                                 <Likebtn />
+                              </div>
+                           </div>
+                        </div>
+                     ))}
+                  </>
+               )}
+            </>
          )}
-      </>
+      </div>
    );
 }
