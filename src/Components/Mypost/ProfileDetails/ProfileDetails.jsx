@@ -3,14 +3,17 @@ import assets from "../../../assets/icons/icons";
 
 import "../../../Styles/ProfileDetails.css";
 
-export default function ProfileDetails(props) {
-   const { media, Medialink, postdate } = props;
+export default function ProfileDetails({ media, Medialink, postdate, profilelink }) {
    return (
       <>
          <div className="main-container-profile-details">
             <div className="feed-post-profile">
-               <img className="post-profile-icon" src={media} alt="" />
-               <h4>Buddhadeb Koner</h4>
+               <a target="_blank" href={profilelink}>
+                  <img className="post-profile-icon" src={media} alt="" />
+               </a>
+               <a target="_blank" href={profilelink}>
+                  <h3>Buddhadeb Koner</h3>
+               </a>
                <a
                   href={Medialink}
                   className="see-original-post"

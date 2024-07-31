@@ -111,6 +111,17 @@ const ApiDataResponce = {
       ],
    },
    assets: {
+      post9: {
+         title: "Decoding Complexity: A Mind Map Journey",
+         date: "1 August 2024",
+         image: "https://res.cloudinary.com/dsfztnp9x/image/upload/f_auto,q_auto/v1/portfolio/penbe6o82rqy98gbmjzm",
+         description:
+            "This captures the essence of the mind map displayed on the laptop screen. Best of luck with your portfolio! 😊",
+         links: "https://www.threads.net/@buddhadeb.exe/post/C-GZupUoIGC",
+         profilelink: "https://www.threads.net/@buddhadeb.exe",
+         media: "https://brandlogos.net/wp-content/uploads/2023/07/threads-logo_brandlogos.net_7cwry-300x300.png",
+         likes: 0,
+      },
       post8: {
          title: "Half Engineer 🤥 Half to Go !",
          date: "25 June 2024",

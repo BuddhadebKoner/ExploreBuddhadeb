@@ -1,20 +1,30 @@
 .feed-post-profile {
     width: fit-content;
-    height: 38px;
+    height: 38px; /* Ensure this matches the height of the image */
     background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: start;
     gap: 15px;
-    margin: 10px 0px 10px 0px;
+    margin: 10px 0;
+}
+
+.feed-post-profile a {
+    text-decoration: none;
+    /* color: var(--black); */
+    display: flex;
+    align-items: center;
 }
 
 .post-profile-icon {
+    background-color: white;
     border: 1px solid white;
-    height: 100%;
-    height: 100%;
+    width: 38px; 
+    height: 38px; 
     border-radius: 50%;
+    object-fit: cover;
 }
+
 
 .feed-post-profile p {
     color: #bdbdbd;

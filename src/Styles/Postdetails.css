@@ -19,6 +19,12 @@
     background-size: cover;
 }
 
+.post-details-description h3 {
+    font-size: large;
+    font-weight: 900;
+    padding: 3px;
+}
+
 
 
 

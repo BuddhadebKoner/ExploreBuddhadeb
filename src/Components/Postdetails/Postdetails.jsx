@@ -28,7 +28,12 @@ export default function Postdetails() {
             <>
                {posts.map((post, index) => (
                   <div key={index} className="postdetails-container">
-                     <ProfileDetails media={post.media} Medialink={post.links} postdate={post.date} />
+                     <ProfileDetails
+                        media={post.media}
+                        Medialink={post.links}
+                        postdate={post.date}
+                        profilelink={post.profilelink}
+                     />
                      <div className="post">
                         <img src={post.image} className="postimage" alt="" />
                         <div className="post-details-description">
