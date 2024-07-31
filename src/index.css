@@ -108,11 +108,7 @@ body {
     height: fit-content;
     overflow-x: hidden;
     overflow-y: auto;
-    background-color: var(--black);
-    background-image: url(https://i.ibb.co/wLKMz0F/q-FDbht-V-abstract-blue-wallpaper.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: var(--basic-700);
 }
 
 a {
