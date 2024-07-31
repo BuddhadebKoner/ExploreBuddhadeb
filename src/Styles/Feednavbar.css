@@ -51,8 +51,8 @@
         width: 100%;
         flex-direction: row;
         justify-content: flex-start;
-        align-items: flex-start;
-        padding: 0 10px 1rem 5px;
+        align-items: center;
+        padding: 15px 0px;
         height: auto;
     }
 

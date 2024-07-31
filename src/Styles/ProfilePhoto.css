@@ -24,7 +24,8 @@
     font-weight: 700;
 }
 .profile-name p{
-    color: #7f7f7f;
+    font-weight: 800;
+    color: #e0e0e0;
 }
 
 .profile-name > *{
