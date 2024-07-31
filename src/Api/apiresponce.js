@@ -114,7 +114,7 @@ const ApiDataResponce = {
       post8: {
          title: "Half Engineer 🤥 Half to Go !",
          date: "25 June 2024",
-         image: "https://i.ibb.co/wRZ2yz6/img8.jpg",
+         image: "https://res.cloudinary.com/dsfztnp9x/image/upload/f_auto,q_auto/v1/portfolio/ofrdw0ogjbleqgeml9ru",
          description:
             "Completing 2 years of btech in computer science and engineering. 🎓",
          links: "https://www.instagram.com/p/C8pXl4VSXdm/?img_index=1",
@@ -125,7 +125,7 @@ const ApiDataResponce = {
       post7: {
          title: "World Yoga Day",
          date: "21 June 2024",
-         image: "https://i.ibb.co/YN9TBD3/img7.webp",
+         image: "https://res.cloudinary.com/dsfztnp9x/image/upload/f_auto,q_auto/v1/portfolio/lztkr8og3cila2hoau2s",
          description:
             "Bending under the stars and lights, finding balance in nature. 🌟🌳 #Arch",
          links: "https://www.instagram.com/p/C8cSJTGSB0o/?img_index=1",
@@ -136,7 +136,7 @@ const ApiDataResponce = {
       post6: {
          title: "We are a team",
          date: "3 June 2024",
-         image: "https://i.ibb.co/10q2XB5/img6.jpg",
+         image: "https://res.cloudinary.com/dsfztnp9x/image/upload/f_auto,q_auto/v1/portfolio/oskevytsur6zesieravv",
          description:
             "United in team, unstoppable in spirit! When we come together, we achieve greatness beyond imagination.",
          links: "https://www.linkedin.com/feed/update/urn:li:activity:7203268806801039360?utm_source=share&utm_medium=member_desktop",
@@ -147,7 +147,7 @@ const ApiDataResponce = {
       post5: {
          title: "Pro Tips & Tricks",
          date: "31 March 2024",
-         image: "https://i.ibb.co/S5qK4qH/img5.jpg",
+         image: "https://res.cloudinary.com/dsfztnp9x/image/upload/f_auto,q_auto/v1/portfolio/mphlrgvtjmtihpezidfv",
          description:
             "Dive into JavaScript's hidden treasures with these 10 expert tips! 💎 Unlock the power of code creativity. Credit to @ChatGPT.",
          links: "https://www.linkedin.com/feed/update/urn:li:activity:7179686817972072449/",
@@ -158,7 +158,7 @@ const ApiDataResponce = {
       post4: {
          title: "Ubuntu 22.10",
          date: "23 March 2024",
-         image: "https://i.ibb.co/NWS58yL/img1.jpg",
+         image: "https://res.cloudinary.com/dsfztnp9x/image/upload/f_auto,q_auto/v1/portfolio/aheamt3fvzrwudxwsqvz",
          description:
             "Discover your coding potential with Ubuntu 23.10! Elevate your skills with its seamless interface, simplified setup, bulletproof security, and abundant toolset including Python and Java. Benefit from community support and personalize your coding environment. Join us in conquering the coding realm together!🚀💻",
          links: "https://www.linkedin.com/posts/buddhadeb-koner-8501b3231_unleash-your-coding-potential-with-ubuntu-activity-7177013167292657664-uucE?utm_source=share&utm_medium=member_desktop",
@@ -169,7 +169,7 @@ const ApiDataResponce = {
       post3: {
          title: "Let's contribute in Open Source",
          date: "27 March 2024",
-         image: "https://i.ibb.co/pfPvtYT/img2.jpg",
+         image: "https://res.cloudinary.com/dsfztnp9x/image/upload/f_auto,q_auto/v1/portfolio/cdnkxoorivda3see6qc7",
          description:
             "🌟 Seeking Open Source Mentorship Dear connections, I'm new to open-source and would love to learn from experienced software engineer like you. Any tips or advice you could share would be greatly appreciated. Let's connect and embark on this journey together!",
          links: "https://x.com/buddhadeb_koner/status/1773667227218178145?t=Qou96v25V7na_-VzTvrCaA&s=09",
@@ -180,7 +180,7 @@ const ApiDataResponce = {
       post2: {
          title: "Food Delivery WebApp Only UI",
          date: "20 Jan 2024",
-         image: "https://i.ibb.co/3m2YjW6/img3.jpg",
+         image: "https://res.cloudinary.com/dsfztnp9x/image/upload/f_auto,q_auto/v1/portfolio/xzxao0qtfnjymvhxwdh1",
          description:
             "I'm pleased to share the Food Delivery Web App Frontend UX project that I worked on. All sources are available on GitHub. It is not responsive at the moment, so please open it on a desktop.",
          links: "https://www.linkedin.com/feed/update/urn:li:activity:7151978062903922688/",
@@ -191,7 +191,7 @@ const ApiDataResponce = {
       post1: {
          title: "Let's Enjoy Life",
          date: "27 Sept 2023",
-         image: "https://i.ibb.co/f1cRzPr/img4.jpg",
+         image: "https://res.cloudinary.com/dsfztnp9x/image/upload/f_auto,q_auto/v1/portfolio/s6vf6wlpbjlmqjzfmslh",
          description:
             "Lost in the beauty of the sky and the serenity of campus life. 🌸✨",
          links: "https://www.instagram.com/p/CxshPSsITG8/?igsh=MTIwM2cxN2hoMzNudg==",
