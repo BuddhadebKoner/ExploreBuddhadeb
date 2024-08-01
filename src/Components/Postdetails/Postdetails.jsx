@@ -21,8 +21,10 @@ export default function Postdetails() {
          const fetchPosts = async () => {
             try {
                // Fetch posts without simulating network delay
-               setPosts(Object.values(ApiDataResponce.assets));
-               setLoading(false);
+               setTimeout(() => {
+                  setPosts(Object.values(ApiDataResponce.assets));
+                  setLoading(false);
+               }, 1000);
             } catch (error) {
                console.error('Error fetching posts:', error);
                setError('Failed to load posts');
@@ -78,3 +80,4 @@ export default function Postdetails() {
       </div>
    );
 }
+
