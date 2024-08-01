@@ -10,6 +10,7 @@ import '../../Styles/Postdetails.css';
 export default function Postdetails() {
    const [posts, setPosts] = React.useState([]);
    const [loading, setLoading] = React.useState(true);
+   const [error, setError] = React.useState(null);
    const { ref, inView } = useInView({
       triggerOnce: true,
       threshold: 0.1,
@@ -19,13 +20,12 @@ export default function Postdetails() {
       if (inView) {
          const fetchPosts = async () => {
             try {
-               // Simulate network delay
-               setTimeout(() => {
-                  setPosts(Object.values(ApiDataResponce.assets));
-                  setLoading(false);
-               }, 1000);
+               // Fetch posts without simulating network delay
+               setPosts(Object.values(ApiDataResponce.assets));
+               setLoading(false);
             } catch (error) {
                console.error('Error fetching posts:', error);
+               setError('Failed to load posts');
                setLoading(false);
             }
          };
@@ -47,6 +47,8 @@ export default function Postdetails() {
                   </div>
                ))}
             </>
+         ) : error ? (
+            <div className="error-message">{error}</div>
          ) : (
             <>
                {ApiDataResponce.numberOfAssets !== 0 && (
