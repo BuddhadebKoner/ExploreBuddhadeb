@@ -3,7 +3,7 @@
 Dive into my digital playground where creativity meets technology. This portfolio showcases my journey and skills using some of the most cutting-edge technologies in web development. Explore, get inspired, and feel free to contribute!
 
 ## Website
-Visit the live site: [explorebuddhadebkoner](https://explorebuddhadebkoner.onrender.com)
+Visit the live site: [explorebuddhadebkoner](https://buddhadebkoner.vercel.app)
 
 ## Built With
 This project leverages a variety of powerful libraries and frameworks to deliver a seamless and engaging user experience:
