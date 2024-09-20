@@ -17,34 +17,19 @@ import Newsfeedpage from './pages/Newsfeedpage/Newsfeedpage.jsx';
 
 
 const Main = () => {
-  useEffect(() => {
-    // Check if the page is being reloaded
-    if (performance.getEntriesByType("navigation")[0].type === "reload") {
-      // Check if localStorage has the last visited path
-      const lastVisitedPath = localStorage.getItem('lastVisitedPath');
-      if (!lastVisitedPath || lastVisitedPath === '/') {
-        // Redirect to '/ExploreBuddhadebKoner'
-        window.location.href = './';
-      }
-    }
-
-    // Store the current path in localStorage
-    localStorage.setItem('lastVisitedPath', window.location.pathname);
-  }, []);
-
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path='/' element={<App/>}>
-        <Route path='' element={<Home/>}/>
-        <Route path='about' element={<About/>}/>
-        <Route path='explore' element={<Explore/>}/>
-        <Route path='login' element={<Login/>}/>
-        <Route path='getstarted' element={<Getstarted/>}/>
-        <Route path='feedback' element={<Feedback/>}/>
-        <Route path='github' element={<Github/>}/>
-        <Route path='resumepage' element={<Resumepage/>}/>
-        <Route path='aboutwebinfo' element={<Aboutwebinfo/>}/>
-        <Route path='newsfeed' element={<Newsfeedpage/>}/>
+      <Route path='/' element={<App />}>
+        <Route path='' element={<Home />} />
+        <Route path='about' element={<About />} />
+        <Route path='explore' element={<Explore />} />
+        <Route path='login' element={<Login />} />
+        <Route path='getstarted' element={<Getstarted />} />
+        <Route path='feedback' element={<Feedback />} />
+        <Route path='github' element={<Github />} />
+        <Route path='resumepage' element={<Resumepage />} />
+        <Route path='aboutwebinfo' element={<Aboutwebinfo />} />
+        <Route path='newsfeed' element={<Newsfeedpage />} />
       </Route>
     )
   );
@@ -54,6 +39,7 @@ const Main = () => {
       <RouterProvider router={router} />
     </React.StrictMode>
   );
-}
+};
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(<Main />);
