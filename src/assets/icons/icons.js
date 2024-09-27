@@ -14,15 +14,11 @@ import threeDotBlack from './threedotWhite.svg';
 
 import hamburger from './menu_hamburgur.svg'
 import close from './close.svg'
-import darkMode from './Mode/dark.svg'
-import lightMode from './Mode/light.svg'
 
 const heroBanner = 'https://i.ibb.co/vBQxxn7/cartoon-man-wearing-glasses.jpg'
 const profile = 'https://i.ibb.co/56hzHJn/profile.jpg'
 
 const assets = {
-    darkMode,
-    lightMode,
     Donate,
     fb,
     heroBanner,
