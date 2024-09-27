@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import assets from '../../assets/icons/icons'
 import { Link, NavLink, useLocation } from 'react-router-dom'
 import '../../Styles/Navbar.css'
@@ -21,6 +21,22 @@ export default function Navbar() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  // if in url have this page /github
+  useEffect(() => {
+    if (location.pathname === '/github') {
+      // change body background color 
+      document.body.style.backgroundColor = '#000000';
+      // overflow hidden
+      document.body.style.overflow = 'hidden';
+    } else {
+      // if not have this page /github
+      // change body background color to white
+      document.body.style.backgroundColor = '#2E3A59';
+      // overflow scroll
+      document.body.style.overflow = 'scroll';
+    }
+  }, [location.pathname]);
 
   return (
     <>

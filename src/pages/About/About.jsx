@@ -6,7 +6,6 @@ import Hero from '../../Components/Hero/Hero'
 export default function About() {
   return (
     <>
-    <Hero/>
     <AboutCard/>
     </>
   )

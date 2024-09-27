@@ -5,7 +5,6 @@ import Resume from '../../../Components/Resume/Resume'
 export default function Resumepage() {
   return (
     <>
-      <Hero />
      <Resume />
     </>
   )

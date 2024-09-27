@@ -13,10 +13,12 @@ import threeDotWhite from './threedotBlack.svg';
 import threeDotBlack from './threedotWhite.svg';
 
 import hamburger from './menu_hamburgur.svg'
-import close from './close.svg'
+import close from './close.svg';
+import githubDark from './githubDark.png';
 
 const heroBanner = 'https://i.ibb.co/vBQxxn7/cartoon-man-wearing-glasses.jpg'
 const profile = 'https://i.ibb.co/56hzHJn/profile.jpg'
+
 
 const assets = {
     Donate,
@@ -32,6 +34,7 @@ const assets = {
     threeDotBlack,
     x,
     github,
+    githubDark,
     Liked,
     Like,
     Close,

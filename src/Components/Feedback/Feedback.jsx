@@ -23,7 +23,6 @@ export default function Feedback() {
 
   return (
     <>
-      <Hero />
       <div className="feedsec-main-full-box">
         <div className="feedback-container glass-bg">
           {state.succeeded ? (

@@ -4,7 +4,7 @@ import Currentproject from '../../Components/Currentproject/Currentproject'
 export default function Currentprojectpage() {
   return (
     <>
-    <Currentproject/>
+      <Currentproject />
     </>
   )
 }

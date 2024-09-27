@@ -45,18 +45,6 @@ const ApiDataResponce = {
          displayName: "Buddhadeb Koner",
       },
    },
-   githubData: {
-      language:
-         "javascript,c,cpp,python,django,git,figma,react,nodejs,expressjs,mongo,vercel,ubuntu",
-      heroText:
-         "https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=👋+Hello,+Future+Collaborator!;🇮🇳+i'am+Buddhadeb+Koner;",
-      githubCommits:
-         "https://github-readme-streak-stats.herokuapp.com/?user=BuddhadebKoner&theme=dark&hide_border=false",
-      mostUseLang:
-         "https://github-readme-stats.vercel.app/api/top-langs/?username=BuddhadebKoner&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact",
-      trophys:
-         "https://github-profile-trophy.vercel.app/?username=BuddhadebKoner&theme=radical&no-frame=false&no-bg=true&margin-w=10",
-   },
    aboutdata: {
       about: `As a dedicated web developer with a strong passion for coding, I have spent the last two years developing expertise in front-end, back-end, and database management. Currently pursuing my degree in Computer Science Engineering, I have honed my skills across multiple programming languages and frameworks, including C++, JavaScript, React, and Git. Rather than confining myself to a specific "stack," I embrace the concept of a "non-stack" developer, focusing on mastering the art of development across various domains.Inspired by the teachings of the Bhagavad Gita, I believe in the philosophy of focusing on the work itself rather than the results. For me, coding is not just a profession—it's a passion. From building high-performance portfolios to developing chat applications with APIs like Gemini, I am constantly pushing my boundaries, seeking out new challenges to improve and evolve.I am also a strong advocate of "learning in public," regularly sharing my insights and resources to contribute to the broader IT community. My ultimate goal is to make a meaningful contribution to the industry and have a positive impact on society.`,
       fblink: "https://www.facebook.com/jeet.koner.36",
@@ -113,6 +101,17 @@ const ApiDataResponce = {
       ],
    },
    assets: {
+      post10: {
+         title: "React Portfolio",
+         date: "27 sept 2024",
+         image: "https://res.cloudinary.com/dsfztnp9x/image/upload/v1727424185/portfolio/yumfwxomgbbrwrhfag6u.png",
+         description:
+            "Exciting News! I’ve just deployed my first full-stack website, and it’s been an incredibly exciting experience! 😄 ",
+         links: "https://www.linkedin.com/feed/update/urn:li:activity:7245270908771180544",
+         profilelink: "https://www.linkedin.com/in/buddhadeb-koner-8501b3231",
+         media: "https://i.ibb.co/FKXC72t/linkedin.png",
+         likes: 0,
+      },
       post9: {
          title: "Decoding Complexity: A Mind Map Journey",
          date: "1 August 2024",
@@ -291,7 +290,7 @@ const ApiDataResponce = {
          ],
       },
    },
-   numberOfAssets: 9,
+   numberOfAssets: 8,
 };
 
 export default ApiDataResponce;
