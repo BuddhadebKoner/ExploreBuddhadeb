@@ -14,7 +14,7 @@ export default function Hero() {
         <>
             <div className="hero-container">
                 <div className="hero-container-bg">
-                    <img src={assets.heroBanner} alt="" />
+                    <img src={assets.heroBanner} alt="herobanner" />
                     <div className="Threed-canvas">
                         <Suspense fallback={<div>Loading 3D Model...</div>} >
                             {/* black whole */}

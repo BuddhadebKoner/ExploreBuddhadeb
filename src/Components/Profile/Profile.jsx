@@ -29,25 +29,25 @@ export default function Profile() {
                   <Dropdown className='follow-me-btn' label="Follow me" dismissOnClick={false}>
                      <a href={ApiDataResponce.aboutdata.fblink} target='_blank'>
                         <Dropdown.Item className='dropdown-items'>
-                           <img src={assets.fb} alt="" />
+                           <img src={assets.fb} alt="facebook" />
                            <h1>Facebook</h1>
                         </Dropdown.Item>
                      </a>
                      <a href={ApiDataResponce.aboutdata.xlink} target='_blank'>
                         <Dropdown.Item className='dropdown-items'>
-                           <img src={assets.x} alt="" />
+                           <img src={assets.x} alt="x" />
                            <h1>x</h1>
                         </Dropdown.Item>
                      </a>
                      <a href={ApiDataResponce.aboutdata.linkedinlink} target='_blank'>
                         <Dropdown.Item className='dropdown-items'>
-                           <img src={assets.linkedin} alt="" />
+                           <img src={assets.linkedin} alt="linkedin" />
                            <h1>Linkedin</h1>
                         </Dropdown.Item>
                      </a>
                      <a href={ApiDataResponce.aboutdata.gitlink} target='_blank'>
                         <Dropdown.Item className='dropdown-items'>
-                           <img src={assets.github} alt="" />
+                           <img src={assets.github} alt="github" />
                            <h1>Github</h1>
                         </Dropdown.Item>
                      </a>
@@ -56,7 +56,7 @@ export default function Profile() {
 
                <div className="main-btn-container">
                   <a className='mail-btn hover-btn' href="mailto:iambuddhadebkoner@gmail.com">
-                     <img src={assets.mail} alt="" className='mail-icon' />
+                     <img src={assets.mail} alt="mail" className='mail-icon' />
                   </a>
                </div>
 
@@ -67,7 +67,7 @@ export default function Profile() {
                      onMouseEnter={handleMouseEnter}
                      onMouseLeave={handleMouseLeave}
                   >
-                     <img src={assets.threeDotWhite} alt="" className='mail-icon' />
+                     <img src={assets.threeDotWhite} alt="icon" className='mail-icon' />
                   </NavLink>
                </div>
             </div>

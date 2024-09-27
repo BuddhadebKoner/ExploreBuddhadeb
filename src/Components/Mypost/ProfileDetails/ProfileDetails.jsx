@@ -9,7 +9,7 @@ export default function ProfileDetails({ media, Medialink, postdate, profilelink
          <div className="main-container-profile-details">
             <div className="feed-post-profile">
                <a target="_blank" href={profilelink}>
-                  <img className="post-profile-icon" src={media} alt="" />
+                  <img className="post-profile-icon" src={media} alt="media" />
                </a>
                <a target="_blank" href={profilelink}>
                   <h3>Buddhadeb Koner</h3>

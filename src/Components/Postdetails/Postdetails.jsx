@@ -79,7 +79,7 @@ export default function Postdetails() {
                               />
                            </Suspense>
                            <div className="post">
-                              <img src={post.image} className="postimage" alt="" />
+                              <img src={post.image} className="postimage" alt="post-images" />
                               <div className="post-details-description">
                                  <h3>{post.title}</h3>
                                  <p>{post.description}</p>

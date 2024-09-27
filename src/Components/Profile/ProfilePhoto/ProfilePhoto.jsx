@@ -9,7 +9,7 @@ export default function ProfilePhoto() {
     return (
         <>
             <div className="profile-photobox">
-                <img src={assets.profile} alt="" />
+                <img src={assets.profile} alt="buddhadebkoner" />
             </div>
             <div className="profile-name">
                 <h1>Buddhadeb Koner</h1>

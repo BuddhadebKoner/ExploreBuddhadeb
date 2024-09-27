@@ -24,22 +24,22 @@ export default function AboutCard() {
                <div className="about-media-links">
                   <div className="media-icons-links">
                      <a href={ApiDataResponce.aboutdata.fblink} target="_blank">
-                        <img src={assets.fb} alt="" />
+                        <img src={assets.fb} alt="facebook" />
                      </a>
                      <a href={ApiDataResponce.aboutdata.xlink} target="_blank">
-                        <img src={assets.x} alt="" />
+                        <img src={assets.x} alt="x" />
                      </a>
                      <a
                         href={ApiDataResponce.aboutdata.linkedinlink}
                         target="_blank"
                      >
-                        <img src={assets.linkedin} alt="" />
+                        <img src={assets.linkedin} alt="linkedin" />
                      </a>
                      <a
                         href={ApiDataResponce.aboutdata.gitlink}
                         target="_blank"
                      >
-                        <img src={assets.github} alt="" />
+                        <img src={assets.github} alt="github" />
                      </a>
                   </div>
                   <div className="skills-list about-tags">
